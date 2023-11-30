@@ -9,6 +9,29 @@ const numberBus = document.querySelector(".info__number");
 const dateBus = document.querySelector(".info__date");
 const timeBus = document.querySelector(".info__time");
 
+// !!!!!!!!!!!!!!!!!!
+document.fullscreenEnabled =
+  document.fullscreenEnabled ||
+  document.mozFullScreenEnabled ||
+  document.documentElement.webkitRequestFullScreen;
+
+function requestFullscreen(element) {
+  if (element.requestFullscreen) {
+    element.requestFullscreen();
+  } else if (element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if (element.webkitRequestFullScreen) {
+    element.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+  }
+}
+
+if (document.fullscreenEnabled) {
+  requestFullscreen(document.documentElement);
+}
+
+// This is not even entirely comprehensive. There's more.
+// !!!!!!!!!!!!!!!!!!
+
 buttonShare.addEventListener("click", function () {
   openPopup(modal);
 });
