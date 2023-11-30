@@ -2,7 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
     <link rel="stylesheet" href="./style.css" />
     <title>TRANSCARD. Город. Оплата проезда</title>
   </head>
@@ -22,6 +27,107 @@
 
         <h3 class="header__title">TRANSCARD. Город. Оплата проезда</h3>
       </header>
+
+      <main class="main">
+        <section class="qr">
+          <img class="qr__image" src="./images/qr.png" alt="" />
+          <p class="qr__title">Покажите QR-код контролеру</p>
+        </section>
+
+        <section class="route">
+          <h4 class="route__title">Маршрут 13184</h4>
+        </section>
+
+        <section class="info">
+          <p class="info__text info__number">Госномер 058CI01</p>
+          <p class="info__text info__date">28 ноября 2023</p>
+          <p class="info__text">90 тенге</p>
+        </section>
+
+        <section class="info-share">
+          <div class="info-share__buttons">
+            <div class="info-share__wrapper">
+              <button class="info-share__button">
+                <svg
+                  version="1.1"
+                  id="print"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 64 64"
+                  enable-background="new 0 0 64 64"
+                  xml:space="preserve"
+                >
+                  <g id="Printer">
+                    <path
+                      d="M57.7881012,14.03125H52.5v-8.0625c0-2.2091999-1.7909012-4-4-4h-33c-2.2091999,0-4,1.7908001-4,4v8.0625H6.2119002
+        C2.7871001,14.03125,0,16.8183498,0,20.2431507V46.513649c0,3.4248009,2.7871001,6.2119026,6.2119002,6.2119026h2.3798995
+        c0.5527,0,1-0.4472008,1-1c0-0.5527-0.4473-1-1-1H6.2119002C3.8896,50.7255516,2,48.8359489,2,46.513649V20.2431507
+        c0-2.3223,1.8896-4.2119007,4.2119002-4.2119007h51.5762024C60.1102982,16.03125,62,17.9208508,62,20.2431507V46.513649
+        c0,2.3223-1.8897018,4.2119026-4.2118988,4.2119026H56c-0.5527992,0-1,0.4473-1,1c0,0.5527992,0.4472008,1,1,1h1.7881012
+        C61.2128983,52.7255516,64,49.9384499,64,46.513649V20.2431507C64,16.8183498,61.2128983,14.03125,57.7881012,14.03125z
+         M13.5,5.96875c0-1.1027999,0.8971996-2,2-2h33c1.1027985,0,2,0.8972001,2,2v8h-37V5.96875z"
+                    />
+                    <path
+                      d="M44,45.0322495H20c-0.5517998,0-0.9990005,0.4472008-0.9990005,0.9990005S19.4482002,47.0302505,20,47.0302505h24
+        c0.5517006,0,0.9990005-0.4472008,0.9990005-0.9990005S44.5517006,45.0322495,44,45.0322495z"
+                    />
+                    <path
+                      d="M44,52.0322495H20c-0.5517998,0-0.9990005,0.4472008-0.9990005,0.9990005S19.4482002,54.0302505,20,54.0302505h24
+        c0.5517006,0,0.9990005-0.4472008,0.9990005-0.9990005S44.5517006,52.0322495,44,52.0322495z"
+                    />
+                    <circle cx="7.9590998" cy="21.8405495" r="2" />
+                    <circle cx="14.2856998" cy="21.8405495" r="2" />
+                    <circle cx="20.6121998" cy="21.8405495" r="2" />
+                    <path
+                      d="M11,62.03125h42v-26H11V62.03125z M13.4036999,38.4349518h37.1925964v21.1925964H13.4036999V38.4349518z"
+                    />
+                  </g>
+                </svg>
+              </button>
+              <p class="info-share__title">Квитанция</p>
+            </div>
+            <div class="info-share__wrapper">
+              <button class="info-share__button info-share__button-share">
+                <svg
+                  class="share-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    id="path-share"
+                    d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"
+                  />
+                </svg>
+              </button>
+              <p class="info-share__title">Поделиться</p>
+            </div>
+          </div>
+        </section>
+        <section class="back">
+          <button class="back__button">ВЕРНУТЬСЯ В ПЛАТЕЖИ</button>
+        </section>
+      </main>
     </div>
+
+    <div class="modal">
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Введите информацию</h2>
+        <form action="" class="modal__form">
+          <input
+            class="modal__input modal__input-route"
+            type="text"
+            placeholder="Маршрут"
+          />
+          <input
+            class="modal__input modal__input-number"
+            type="text"
+            placeholder="Госномер"
+          />
+          <button class="modal__save-button">Сохранить</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
