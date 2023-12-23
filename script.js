@@ -8,6 +8,7 @@ const routeBus = document.querySelector(".route__title");
 const numberBus = document.querySelector(".info__number");
 const dateBus = document.querySelector(".info__date");
 const timeBus = document.querySelector(".info__time");
+const installIcon = document.querySelector(".info-share__title");
 
 // !!!!!!!!!!!!!!!!!!
 document.fullscreenEnabled =
@@ -101,3 +102,13 @@ function sendInfo(event) {
 }
 
 form.addEventListener("submit", sendInfo);
+
+// Установка
+let defaultInstallEvent = null;
+window.addEventListener("beforeinstallprompt", (event) => {
+  event.preventDefault();
+  defaultInstallEvent = event;
+});
+installIcon.addEventListener("click", (event) => {
+  defaultInstallEvent.prompt();
+});

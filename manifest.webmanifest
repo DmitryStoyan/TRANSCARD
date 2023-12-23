@@ -1,0 +1,13 @@
+{
+  "name": "Transcard",
+  "start_url": "index.html",
+  "orientation": "portrait",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "vehicles.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
